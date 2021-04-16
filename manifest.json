@@ -1,0 +1,30 @@
+{
+	"manifest_version": 2,
+	"name": "modheaders",
+	"version": "0.0.1",
+	"description": "Modify HTTP request headers.",
+	"icons": {
+		"16":"images/icon-red-16.png",
+		"48":"images/icon-red-48.png",
+		"128":"images/icon-red-128.png"
+	},
+	"background": {
+		"scripts": [
+			"background-vendor.js",
+			"background.js"
+		]
+	},
+	"options_page": "options.html",
+	"permissions": [
+		"activeTab",
+		"storage",
+		"tabs",
+		"webRequest",
+		"webRequestBlocking",
+		"<all_urls>"
+	],
+	"web_accessible_resources": [
+		"images/icon-green-48.png",
+		"images/icon-red-48.png"
+	]
+}
